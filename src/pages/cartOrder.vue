@@ -143,7 +143,7 @@ watch(promocode, () => {
         max-[644px]:items-start
         max-[644px]:w-full
         max-[644px]:place-items-center">
-          <img :src="'/public/sneakers/' + item.img" class="w-25 h-28
+          <img :src="'/sneakers/' + item.img" class="w-25 h-28
           max-[644px]:w-36
           max-[644px]:h-32
           max-[644px]:self-center

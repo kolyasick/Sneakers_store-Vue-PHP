@@ -27,7 +27,7 @@ watch(cartStore.cartItems, () => {
               <img src="/like-1.svg" alt="Like 1" class="">
               <img @click="cartStore.deleteFromCart(item)" src="/close.svg" alt="Like 1" class="">
             </div>
-            <a href=""><img :src="'/public/sneakers/' + item.img" alt="Sneaker"></a>
+            <a href=""><img :src="'/sneakers/' + item.img" alt="Sneaker"></a>
             <p class="mt-2 font-semibold">{{ item.title }}</p>
             <p>{{ item.content }}</p>
             <div class="flex justify-between mt-5">

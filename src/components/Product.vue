@@ -23,7 +23,7 @@ defineProps<Props>()
          class="absolute top-8 left-8"
       />
       <a href=""
-      ><img class="xl:w-72" :src="'/public/sneakers/' + item.img" alt="Sneaker"
+      ><img :src="'/sneakers/' + item.img" alt="Sneaker"
       /></a>
       <p class="mt-2 font-semibold">{{ item.title }}</p>
       <div class="flex justify-between mt-5">
