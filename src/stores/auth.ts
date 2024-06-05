@@ -119,7 +119,7 @@ export const useAuthStore = defineStore('authStore', {
       },
       async getUser() {
          try {
-            await axios.get('http://localhost/users/info',{
+            await axios.get(`${API_URL}/users/info`,{
                headers: {
                   Authorization: `Bearer ${localStorage.getItem('token')}`
                }
