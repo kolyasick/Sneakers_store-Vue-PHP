@@ -47,7 +47,11 @@ watch(() => authStore.errors, () => {
 
       <form
          @submit.prevent="signin"
-         class="border border-gray-300 rounded-2xl p-6 w-1/4 flex flex-col shadow-2xl shadow-black"
+         class="border border-gray-300 rounded-2xl p-6 w-1/4 flex flex-col shadow-2xl shadow-black
+         max-[1720px]:w-1/3
+         max-[1310px]:w-1/2
+         max-[906px]:w-full
+"
       >
          <div class="flex flex-col gap-3">
             <Input
@@ -86,7 +90,7 @@ watch(() => authStore.errors, () => {
             >
                <img width="40" src="/bouncing-ball.svg" alt="" />
             </span>
-            <div class="mt-5 flex gap-2">
+            <div class="mt-5 flex gap-2 max-[504px]:flex-col max-[504px]:items-start">
                <p>Нет аккаунта?</p>
                <router-link class="underline text-blue-500" to="/register"
                   >Зарегистрироваться</router-link
