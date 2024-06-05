@@ -41,8 +41,7 @@ export const useItemsStore: any = defineStore('itemsStore', {
             )
             this.categories = data
          } catch (error) {
-            this.auth.serverError =
-               'Сервис недоступен, уже разбираемся с этим. Код ошибки: 500'
+            
          }
       },
       async fetchFilters(params: string, type: 'query' | 'category') {
@@ -65,10 +64,10 @@ export const useItemsStore: any = defineStore('itemsStore', {
             else {
                this.items = []
                this.errors = `По вашему запросу "${params}" ничего не найдено`
-               console.log(this.errors)
+               
             }
          } catch (error) {
-            this.auth.serverError = 'Сервер недоступен, уже разбираемся с этим'
+            
          }
       },
    },
