@@ -38,7 +38,7 @@ export const useItemsStore: any = defineStore('itemsStore', {
       async fetchCategories() {
          try {
             const { data } = await axios.get<ICategories[]>(
-               'http://localhost/categories/all'
+               `${API_URL}/categories/all`
             )
             this.categories = data
          } catch (error) {
