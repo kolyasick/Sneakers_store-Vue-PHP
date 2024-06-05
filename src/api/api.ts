@@ -1,1 +1,1 @@
-export const API_URL: string = 'https://demo.steadyhost.ru'
+export const API_URL: string = 'https://sneakers-api.atwebpages.com'
