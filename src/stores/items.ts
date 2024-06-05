@@ -31,8 +31,7 @@ export const useItemsStore: any = defineStore('itemsStore', {
                      ?.quantity || 0,
             }))
          } catch (error) {
-            this.auth.serverError =
-               'Сервис недоступен, уже разбираемся с этим. Код ошибки: 500'
+
          }
       },
       async fetchCategories() {
