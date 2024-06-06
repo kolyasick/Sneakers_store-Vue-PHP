@@ -1,1 +1,1 @@
-export const API_URL: string = 'https://sneakersss-api.infinityfreeapp.com'
+export const API_URL: string = 'https://igrokfacei.temp.swtest.ru/'
